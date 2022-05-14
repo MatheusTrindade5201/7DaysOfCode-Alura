@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		let area = prompt("Qual área da programação você gostaria de seguir?","Digite 1 para Front-End e 2 para Back-end");
+
+		while(area != 1 && area !=  2){
+			alert("Você digitou uma opção inválida, digite novamente.");
+			let area = prompt("Qual área da programação você gostaria de seguir?","Digite 1 para Front-End e 2 para Back-end");
+		}
+
+		if(area == "1"){
+			area = "Front-End";
+			let framework = prompt("Qual Framework você gostaria de aprender?", "Digite 1 para Reactive e 2 para Vue");
+
+			while(framework != "1" && framework != "2"){
+				alert("Você digitou uma opção inválida, digite novamente.");
+				let framework = prompt("Qual Framework você gostaria de aprender?", "Digite 1 para Reactive e 2 para Vue");
+			}
+		}
+		else if(area == "2"){
+			area = "Back-End";
+			let linguagem = prompt("Qual linguagem você gostaria de aprender?", "Digite 1 para C# e 2 para Java");
+
+			while(linguagem != "1" && linguagem != "2"){
+				alert("Você digitou uma opção inválida, digite novamente.");
+				let linguagem = prompt("Qual linguagem você gostaria de aprender?", "Digite 1 para C# e 2 para Java");
+			}
+
+		}
+
+		let jornada = prompt("Você deseja se especializar na área escolhida, ou se tornar um Fullstack?","Digite 1 para Especialização e 2 para Fullstack");
+
+		while(jornada != "1" && jornada != "2"){
+			alert("Você digitou uma opção inválida, digite novamente.");
+			let jornada = prompt("Você deseja se especializar na área escolhida, ou se tornar um Fullstack?","Digite 1 para Especialização e 2 para Fullstack");
+		}
+
+		if(jornada == "1"){
+
+			alert("Ótima escolha! Você será um ótimo profissional de " + area);
+		}
+		else if(jornada == "2"){
+
+			alert("O caminho é longo, mas tenho certeza que você será um ótimo profissional Fullstack!")
+
+		}
+
+		
+
+		let continuar = prompt("Tem mais alguma tecnologia que você gostaria de aprender?", "S/N");
+
+		while(continuar != 'N'){
+			
+			
+			let tec = prompt("Digite a tecnologia")
+			alert(tec + " é uma ótima opção para se aprender!");
+			continuar = prompt("Tem mais alguma tecnologia que você gostaria de aprender?", "S/N");
+		}
+		
+		document.write("Obrigado por responder!");
+		
+		
+
+	</script>
+
+</body>
+</html>
